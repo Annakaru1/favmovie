@@ -1,1 +1,9 @@
-<h1> My Favorite Movies </h1>
+<% @movies.each do |movie| %>
+  <div>
+    <h1><%= movie.title %></h1><br />
+    <i><%= movie.year %></i><br />
+    
+  </div>
+
+  <hr />
+<% end %>
